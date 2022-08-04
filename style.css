@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    /* border: 3px solid black;  */
+    border-radius: 50%;
+    animation: myanime 2s infinite ease;
+    position: absolute;
+    animation-delay: .1s;
+
+}
+
+.container:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.container:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.container:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.container:nth-child(5) {
+    animation-delay: .5s;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    transform: translateX(25px) translateY(25px);
+}
+
+.box:nth-child(2) {
+    transform: translateX(1px) translateY(15px);
+ 
+}
+
+@keyframes myanime {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+
+    }
+
+    100% {
+        transform: rotate(405deg);
+    }
+}
